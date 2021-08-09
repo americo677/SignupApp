@@ -110,7 +110,7 @@ class UserDataLoginViewController: UIViewController, UserDataManagerViewProtocol
         if segue.identifier == "segueMainToActivityLog" {
             let activityLogVC = segue.destination as! ActivityLogViewController
             
-            activityLogVC.presenter?.userData = self.presenter?.userData!
+            activityLogVC.userData = self.presenter?.userData!
             //weatherViewController.city = self.city
         }
     }

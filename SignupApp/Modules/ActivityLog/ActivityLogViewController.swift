@@ -17,14 +17,18 @@ class ActivityLogViewController: UIViewController, ActivityLogManagerViewProtoco
     @IBOutlet var activityLogTableView: UITableView!
 
     var presenter: ActivityLogPresenterProtocol?
-
+    var userData: UserData?
+    
+    var activityLogs = [ActivityLogData]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.presenter = ActivityLogPresenter()
         self.presenter?.view = self
         
         // carga de actividad
-        self.presenter?.getLog()
+        activityLogs = (self.presenter?.getLog(userData: userData!))!
         
         // Do any additional setup after loading the view.
         initTableView(tableView: activityLogTableView, backgroundColor: .clear)
@@ -78,33 +82,19 @@ extension ActivityLogViewController: UITableViewDelegate, UITableViewDataSource 
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (self.presenter?.activityLogs!.count)!
+        return (self.activityLogs.count)
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "logCell") as! ActivityLogTableViewCell
             
-        let activityLog: ActivityLogData = (self.presenter?.activityLogs![indexPath.row])!
+        let activityLog: ActivityLogData = (activityLogs[indexPath.row])
         
         cell.activityResultLabel.text = activityLog.result
         cell.activityDateLabel.text = activityLog.date
         
         return cell
-    }
-
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        /*
-        if self.scSearchController.isActive && self.scSearchController.searchBar.text != "" {
-            if self.weatherFiltered.count > 0 {
-                self.weather = self.weatherFiltered[indexPath.row]
-            }
-        } else {
-            if self.weathers.count > 0 {
-                self.weather = self.weathers[indexPath.row]
-            }
-        }
- */
     }
 
     // Override to support conditional rearranging of the table view.

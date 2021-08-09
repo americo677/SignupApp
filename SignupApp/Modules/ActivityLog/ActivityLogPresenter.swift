@@ -14,7 +14,7 @@ protocol ActivityLogPresenterProtocol: class {
     var activityLogs: [ActivityLogData]? { get set }
     var userData: UserData? { get set }
 
-    func getLog() -> [ActivityLogData]?
+    func getLog(userData: UserData) -> [ActivityLogData]?
 }
 
 
@@ -32,8 +32,9 @@ class ActivityLogPresenter: ActivityLogPresenterProtocol {
         activityLogs = [ActivityLogData]()
     }
     
-    func getLog() -> [ActivityLogData]? {
-        self.activityLogs = interactor?.getLog(userData: self.userData!)
+    func getLog(userData: UserData) -> [ActivityLogData]? {
+        self.userData = userData
+        self.activityLogs = interactor?.getLog(userData: userData)
         return self.activityLogs
     }
     
