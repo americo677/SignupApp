@@ -7,26 +7,35 @@
 
 import XCTest
 
+@testable import SignupApp
+
 class ActivityLogManagerTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+    var interactor:  ActivityLogManagerInteractorProtocol?
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    override func setUp() {
+        super.setUp()
+        
+        interactor = ActivityLogInteractor()
+        
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    override func tearDown() {
+        interactor = nil
+        
+        super.tearDown()
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testListActivityLogOk() throws {
+        
+        var email = "americo677@gmail.com"
+        var password = "73Rzvzdv+"
+        var userData = UserData(email: email, password: password)
+        
+        let logs = interactor?.getLog(userData: userData)
+        
+        XCTAssertNotNil(logs!, "Resultado debería retornar registros.")
+        XCTAssert(logs!.count > 0, "Listado de registros de la bitácora de validación de una cuenta.")
     }
 
 }

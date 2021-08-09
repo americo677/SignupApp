@@ -6,27 +6,39 @@
 //
 
 import XCTest
+import CoreLocation
+
+@testable import SignupApp
 
 class ClockDataTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+    //var presenter: DataUserManagerPresenterProtocol?
+    var interactor:  UserDataManagerInteractorProtocol?
+    var api: ClockAPIGeoNames?
+    
+    override func setUp() {
+        super.setUp()
+        
+        interactor = UserDataInteractor()
+        
+        api = ClockAPIGeoNames()
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    override func tearDown() {
+        //presenter = nil
+        //interactor = nil
+        api = nil
+        
+        super.tearDown()
     }
+    
+    func testfetchClockData() throws {
+        let lat: CLLocationDegrees = 4.71
+        let lon: CLLocationDegrees = -74.07
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+        //XCTAssertNoThrow(api!.fetchFor(latitude: lat, longitude: lon), "Throws error)
 
+     }
+    
 }
