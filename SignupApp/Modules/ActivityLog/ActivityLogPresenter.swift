@@ -12,8 +12,9 @@ protocol ActivityLogPresenterProtocol: class {
     var interactor: ActivityLogManagerInteractorProtocol? { get set }
     var view: ActivityLogManagerViewProtocol? { get set }
     var activityLogs: [ActivityLogData]? { get set }
+    var userData: UserData? { get set }
 
-    func getLog(userData: UserData) -> [ActivityLogData]?
+    func getLog() -> [ActivityLogData]?
 }
 
 
@@ -24,13 +25,15 @@ class ActivityLogPresenter: ActivityLogPresenterProtocol {
     
     var activityLogs: [ActivityLogData]?
     
+    var userData: UserData?
+    
     init() {
         interactor = ActivityLogInteractor()
         activityLogs = [ActivityLogData]()
     }
     
-    func getLog(userData: UserData) -> [ActivityLogData]? {
-        self.activityLogs = interactor?.getLog(userData: userData)
+    func getLog() -> [ActivityLogData]? {
+        self.activityLogs = interactor?.getLog(userData: self.userData!)
         return self.activityLogs
     }
     

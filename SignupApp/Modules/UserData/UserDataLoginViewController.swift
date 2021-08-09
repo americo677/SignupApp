@@ -70,7 +70,15 @@ class UserDataLoginViewController: UIViewController, UserDataManagerViewProtocol
             let result = self.presenter?.validate(userData: userData)
             
             if (result == 0) {
+                
                 print("Email \(email) validado con éxito.  Resultado de validación: exitoso.")
+
+                self.presenter?.userData = userData
+                
+                self.performSegue(withIdentifier: "segueMainToActivityLog", sender: self)
+
+            } else {
+                showCustomAlert(title: "Signup", message: "Acceso denegado.  Por favor verifica los datos de tu cuenta", toFocus: self.emailTextField)
             }
             
         } else if (sender.titleLabel!.text == "Sign Up") {
@@ -92,15 +100,20 @@ class UserDataLoginViewController: UIViewController, UserDataManagerViewProtocol
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "segueMainToActivityLog" {
+            let activityLogVC = segue.destination as! ActivityLogViewController
+            
+            activityLogVC.presenter?.userData = self.presenter?.userData!
+            //weatherViewController.city = self.city
+        }
     }
-    */
 
 }
 

@@ -17,6 +17,23 @@ class ActivityLogManagerCoreData: ActivityLogManagerContract {
         userDataManager = UserDataManagerCoreData()
     }
     
+    func secureDateEvent(activityLogData: ActivityLogData) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "y-M-d hh:mm"
+        
+        var secureDate: String = ""
+        
+        if !(activityLogData.date.isEmpty) {
+            secureDate = activityLogData.date
+        } else {
+            let date = Date()
+            secureDate = dateFormatter.string(from: date)
+        }
+         
+        return secureDate
+
+    }
+    
     
     func saveLog(activityLogData: ActivityLogData, userDataEntity: UserDataEntity) {
         let entity = NSEntityDescription.entity(forEntityName: "ActivityLogEntity",
@@ -25,7 +42,9 @@ class ActivityLogManagerCoreData: ActivityLogManagerContract {
         let activityLogEntity = NSManagedObject(entity: entity,
                                      insertInto: managedObjectContext)
         
-        activityLogEntity.setValue(activityLogData.date, forKey: "date")
+        let secureDate = secureDateEvent(activityLogData: activityLogData)
+        
+        activityLogEntity.setValue(secureDate, forKey: "date")
         activityLogEntity.setValue(activityLogData.result, forKey: "result")
         activityLogEntity.setValue(userDataEntity, forKey: "userdata")
         

@@ -21,6 +21,7 @@ protocol DataUserPresenterProtocol: class {
     var view: UserDataManagerViewProtocol? { get set }
     var latitude: CLLocationDegrees? { get set }
     var longitude: CLLocationDegrees? { get set }
+    var userData: UserData? { get set }
 
     func validate(userData: UserData) -> Int
     func signup(userData: UserData, message: inout String) -> Int
@@ -39,6 +40,7 @@ class UserDataManagerPresenter: DataUserPresenterProtocol {
     // init by default, but is setting in view at locationManager(:didUpdateLocations)
     var longitude: CLLocationDegrees? = -74.07
 
+    var userData: UserData?
     
     init() {
         interactor = UserDataInteractor()

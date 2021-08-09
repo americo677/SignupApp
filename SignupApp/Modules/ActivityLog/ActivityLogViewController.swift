@@ -21,15 +21,15 @@ class ActivityLogViewController: UIViewController, ActivityLogManagerViewProtoco
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        presenter = ActivityLogPresenter()
-        presenter?.view = self
+        self.presenter?.view = self
+        
+        // carga de actividad
+        self.presenter?.getLog()
         
         // Do any additional setup after loading the view.
         initTableView(tableView: activityLogTableView, backgroundColor: .clear)
         
-        
     }
-    
 
     /*
     // MARK: - Navigation
@@ -40,7 +40,6 @@ class ActivityLogViewController: UIViewController, ActivityLogManagerViewProtoco
         // Pass the selected object to the new view controller.
     }
     */
-
 }
 
 // MARK: - Extensión para UITableView
@@ -57,11 +56,11 @@ extension ActivityLogViewController: UITableViewDelegate, UITableViewDataSource 
 
         tableView.backgroundColor = color
 
-        //let identifier = "cityViewCell"
-        //let myBundle = Bundle(for: CityViewController.self)
-        //let nib = UINib(nibName: "cityViewCell", bundle: myBundle)
+        let identifier = "logCell"
+        let myBundle = Bundle(for: ActivityLogViewController.self)
+        let nib = UINib(nibName: "logCell", bundle: myBundle)
 
-        //tableView.register(nib, forCellReuseIdentifier: identifier)
+        tableView.register(nib, forCellReuseIdentifier: identifier)
 
         tableView.allowsMultipleSelectionDuringEditing = false
         tableView.allowsSelectionDuringEditing = true
@@ -84,37 +83,14 @@ extension ActivityLogViewController: UITableViewDelegate, UITableViewDataSource 
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as UITableViewCell?
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "logCell") as! ActivityLogTableViewCell
+            
         let activityLog: ActivityLogData = (self.presenter?.activityLogs![indexPath.row])!
         
+        cell.activityResultLabel.text = activityLog.result
+        cell.activityDateLabel.text = activityLog.date
         
-        
-        cell?.title.text = activityLog.result
-        cell?.subtitle.text = activityLog.date
-/*
-        var cell: WeatherTableViewCell? = tableView.dequeueReusableCell(withIdentifier: WeatherTableViewCell.identifier) as? WeatherTableViewCell
-
-        //var cell: UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: identifier)
-
-        if cell == nil {
-            cell = UITableViewCell(style: .default, reuseIdentifier: WeatherTableViewCell.identifier) as! WeatherTableViewCell
-        }
-
-        if self.scSearchController.isActive && self.scSearchController.searchBar.text != "" {
-            if self.weatherFiltered.count > 0 {
-                self.weather = self.weatherFiltered[indexPath.row]
-            }
-        } else {
-            if self.weathers.count > 0 {
-                self.weather = self.weathers[indexPath.row]
-            }
-        }
-
-        cell?.config(model: self.weather!)
-        */
-        
-        return cell!
+        return cell
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

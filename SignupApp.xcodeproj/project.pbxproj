@@ -7,15 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E15A28C26C14E7E002BBECA /* ActivityLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E15A28B26C14E7E002BBECA /* ActivityLogViewController.swift */; };
+		1E15A29126C1518C002BBECA /* ActivityLogPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E15A29026C1518C002BBECA /* ActivityLogPresenter.swift */; };
+		1E15A29626C151E7002BBECA /* ActivityLogInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E15A29526C151E7002BBECA /* ActivityLogInteractor.swift */; };
+		1E15A2A726C18C98002BBECA /* ActivityLogManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E15A2A626C18C98002BBECA /* ActivityLogManagerTests.swift */; };
+		1E15A2B226C1A55D002BBECA /* ActivityLogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E15A2B126C1A55D002BBECA /* ActivityLogTableViewCell.swift */; };
 		1E55C26F26BE2E2A0046E34C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E55C26E26BE2E2A0046E34C /* AppDelegate.swift */; };
 		1E55C27126BE2E2A0046E34C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E55C27026BE2E2A0046E34C /* SceneDelegate.swift */; };
-		1E55C27326BE2E2A0046E34C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E55C27226BE2E2A0046E34C /* ViewController.swift */; };
 		1E55C27626BE2E2A0046E34C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E55C27426BE2E2A0046E34C /* Main.storyboard */; };
-		1E55C27926BE2E2A0046E34C /* SignupApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1E55C27726BE2E2A0046E34C /* SignupApp.xcdatamodeld */; };
 		1E55C27B26BE2E500046E34C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E55C27A26BE2E500046E34C /* Assets.xcassets */; };
 		1E55C27E26BE2E500046E34C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E55C27C26BE2E500046E34C /* LaunchScreen.storyboard */; };
 		1E55C28926BE2E520046E34C /* SignupAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E55C28826BE2E520046E34C /* SignupAppTests.swift */; };
 		1E55C29426BE2E520046E34C /* SignupAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E55C29326BE2E520046E34C /* SignupAppUITests.swift */; };
+		1E55C2AB26BE32100046E34C /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E55C2AA26BE32100046E34C /* UserData.swift */; };
+		1E55C2BC26BE33B60046E34C /* UserDataLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E55C2BB26BE33B60046E34C /* UserDataLoginViewController.swift */; };
+		1E55C2C126BE34430046E34C /* UserDataManagerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E55C2C026BE34430046E34C /* UserDataManagerContract.swift */; };
+		1E55C2C626BE35620046E34C /* UserDataManagerCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E55C2C526BE35620046E34C /* UserDataManagerCoreData.swift */; };
+		1E55C2CB26BE37B00046E34C /* UserDataManagerCloudKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E55C2CA26BE37B00046E34C /* UserDataManagerCloudKit.swift */; };
+		1E55C2D026BE38650046E34C /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E55C2CF26BE38650046E34C /* CoreDataManager.swift */; };
+		1E55C2DA26BE4B000046E34C /* signupdb.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1E55C2D826BE4B000046E34C /* signupdb.xcdatamodeld */; };
+		1E55C30626BE7C550046E34C /* UserDataEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E55C30426BE7C550046E34C /* UserDataEntity+CoreDataClass.swift */; };
+		1E55C30726BE7C550046E34C /* UserDataEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E55C30526BE7C550046E34C /* UserDataEntity+CoreDataProperties.swift */; };
+		1E55C30F26BF2BD10046E34C /* UserDataPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E55C30E26BF2BD10046E34C /* UserDataPresenter.swift */; };
+		1E55C31426BF39920046E34C /* UserDataInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E55C31326BF39920046E34C /* UserDataInteractor.swift */; };
+		1E55C31926BF3A3E0046E34C /* DataManagerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E55C31826BF3A3E0046E34C /* DataManagerContract.swift */; };
+		1E55C31F26BF4F630046E34C /* ValidDataCheckContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E55C31E26BF4F630046E34C /* ValidDataCheckContract.swift */; };
+		1E55C32726BF4FD90046E34C /* ValidDataCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E55C32626BF4FD90046E34C /* ValidDataCheck.swift */; };
+		1E55C32C26BF88710046E34C /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E55C32B26BF88710046E34C /* ViewControllerExtension.swift */; };
+		1EAD01E426C02B9F006AFB21 /* ClockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAD01E326C02B9F006AFB21 /* ClockData.swift */; };
+		1EAD020626C04ADE006AFB21 /* UserDataManagerFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAD020526C04ADE006AFB21 /* UserDataManagerFirebase.swift */; };
+		1EAD020C26C04F0E006AFB21 /* ClockServiceContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAD020B26C04F0E006AFB21 /* ClockServiceContract.swift */; };
+		1EAD021126C04F80006AFB21 /* ClockServiceAPIGeoNamesAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAD021026C04F80006AFB21 /* ClockServiceAPIGeoNamesAdapter.swift */; };
+		1EAD021626C0509A006AFB21 /* ClockAPIGeoNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAD021526C0509A006AFB21 /* ClockAPIGeoNames.swift */; };
+		1EAD021B26C08442006AFB21 /* UserDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAD021A26C08442006AFB21 /* UserDataManagerTests.swift */; };
+		1EAD022026C08CF8006AFB21 /* ClockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAD021F26C08CF8006AFB21 /* ClockAPIService.swift */; };
+		1EAD022826C0927D006AFB21 /* ClockDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAD022726C0927D006AFB21 /* ClockDataTests.swift */; };
+		1EAD022E26C09D50006AFB21 /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EAD022D26C09D50006AFB21 /* sample.json */; };
+		1EAD023C26C10819006AFB21 /* ActivityLogManagerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAD023B26C10819006AFB21 /* ActivityLogManagerContract.swift */; };
+		1EAD024126C1087B006AFB21 /* ActivityLogManagerCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAD024026C1087B006AFB21 /* ActivityLogManagerCoreData.swift */; };
+		1EAD024926C10A9D006AFB21 /* ActivityLogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAD024826C10A9D006AFB21 /* ActivityLogData.swift */; };
+		1EAD025826C10C87006AFB21 /* ActivityLogEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAD025626C10C87006AFB21 /* ActivityLogEntity+CoreDataClass.swift */; };
+		1EAD025926C10C87006AFB21 /* ActivityLogEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAD025726C10C87006AFB21 /* ActivityLogEntity+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,12 +68,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E15A28B26C14E7E002BBECA /* ActivityLogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLogViewController.swift; sourceTree = "<group>"; };
+		1E15A29026C1518C002BBECA /* ActivityLogPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLogPresenter.swift; sourceTree = "<group>"; };
+		1E15A29526C151E7002BBECA /* ActivityLogInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLogInteractor.swift; sourceTree = "<group>"; };
+		1E15A2A626C18C98002BBECA /* ActivityLogManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLogManagerTests.swift; sourceTree = "<group>"; };
+		1E15A2B126C1A55D002BBECA /* ActivityLogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLogTableViewCell.swift; sourceTree = "<group>"; };
 		1E55C26B26BE2E290046E34C /* SignupApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignupApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E55C26E26BE2E2A0046E34C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E55C27026BE2E2A0046E34C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1E55C27226BE2E2A0046E34C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1E55C27526BE2E2A0046E34C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1E55C27826BE2E2A0046E34C /* SignupApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SignupApp.xcdatamodel; sourceTree = "<group>"; };
 		1E55C27A26BE2E500046E34C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E55C27D26BE2E500046E34C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E55C27F26BE2E500046E34C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +86,35 @@
 		1E55C28F26BE2E520046E34C /* SignupAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignupAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E55C29326BE2E520046E34C /* SignupAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupAppUITests.swift; sourceTree = "<group>"; };
 		1E55C29526BE2E520046E34C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E55C2AA26BE32100046E34C /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		1E55C2BB26BE33B60046E34C /* UserDataLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataLoginViewController.swift; sourceTree = "<group>"; };
+		1E55C2C026BE34430046E34C /* UserDataManagerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataManagerContract.swift; sourceTree = "<group>"; };
+		1E55C2C526BE35620046E34C /* UserDataManagerCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataManagerCoreData.swift; sourceTree = "<group>"; };
+		1E55C2CA26BE37B00046E34C /* UserDataManagerCloudKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataManagerCloudKit.swift; sourceTree = "<group>"; };
+		1E55C2CF26BE38650046E34C /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		1E55C2D926BE4B000046E34C /* signupdb.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = signupdb.xcdatamodel; sourceTree = "<group>"; };
+		1E55C30426BE7C550046E34C /* UserDataEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDataEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1E55C30526BE7C550046E34C /* UserDataEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDataEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1E55C30E26BF2BD10046E34C /* UserDataPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataPresenter.swift; sourceTree = "<group>"; };
+		1E55C31326BF39920046E34C /* UserDataInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataInteractor.swift; sourceTree = "<group>"; };
+		1E55C31826BF3A3E0046E34C /* DataManagerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerContract.swift; sourceTree = "<group>"; };
+		1E55C31E26BF4F630046E34C /* ValidDataCheckContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidDataCheckContract.swift; sourceTree = "<group>"; };
+		1E55C32626BF4FD90046E34C /* ValidDataCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidDataCheck.swift; sourceTree = "<group>"; };
+		1E55C32B26BF88710046E34C /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		1EAD01E326C02B9F006AFB21 /* ClockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockData.swift; sourceTree = "<group>"; };
+		1EAD020526C04ADE006AFB21 /* UserDataManagerFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataManagerFirebase.swift; sourceTree = "<group>"; };
+		1EAD020B26C04F0E006AFB21 /* ClockServiceContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockServiceContract.swift; sourceTree = "<group>"; };
+		1EAD021026C04F80006AFB21 /* ClockServiceAPIGeoNamesAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockServiceAPIGeoNamesAdapter.swift; sourceTree = "<group>"; };
+		1EAD021526C0509A006AFB21 /* ClockAPIGeoNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockAPIGeoNames.swift; sourceTree = "<group>"; };
+		1EAD021A26C08442006AFB21 /* UserDataManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataManagerTests.swift; sourceTree = "<group>"; };
+		1EAD021F26C08CF8006AFB21 /* ClockAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockAPIService.swift; sourceTree = "<group>"; };
+		1EAD022726C0927D006AFB21 /* ClockDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockDataTests.swift; sourceTree = "<group>"; };
+		1EAD022D26C09D50006AFB21 /* sample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
+		1EAD023B26C10819006AFB21 /* ActivityLogManagerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLogManagerContract.swift; sourceTree = "<group>"; };
+		1EAD024026C1087B006AFB21 /* ActivityLogManagerCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLogManagerCoreData.swift; sourceTree = "<group>"; };
+		1EAD024826C10A9D006AFB21 /* ActivityLogData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLogData.swift; sourceTree = "<group>"; };
+		1EAD025626C10C87006AFB21 /* ActivityLogEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActivityLogEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1EAD025726C10C87006AFB21 /* ActivityLogEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActivityLogEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +165,12 @@
 		1E55C26D26BE2E290046E34C /* SignupApp */ = {
 			isa = PBXGroup;
 			children = (
-				1E55C26E26BE2E2A0046E34C /* AppDelegate.swift */,
-				1E55C27026BE2E2A0046E34C /* SceneDelegate.swift */,
-				1E55C27226BE2E2A0046E34C /* ViewController.swift */,
-				1E55C27426BE2E2A0046E34C /* Main.storyboard */,
-				1E55C27A26BE2E500046E34C /* Assets.xcassets */,
-				1E55C27C26BE2E500046E34C /* LaunchScreen.storyboard */,
-				1E55C27F26BE2E500046E34C /* Info.plist */,
-				1E55C27726BE2E2A0046E34C /* SignupApp.xcdatamodeld */,
+				1E55C2DE26BE4C0E0046E34C /* Application */,
+				1EAD01E126C02A0F006AFB21 /* Resources */,
+				1EAD01E026C029D9006AFB21 /* Common */,
+				1E55C2A626BE314F0046E34C /* Modules */,
+				1E55C2A426BE2F1C0046E34C /* Model */,
+				1EAD01F226C041F3006AFB21 /* Helper */,
 			);
 			path = SignupApp;
 			sourceTree = "<group>";
@@ -118,6 +180,9 @@
 			children = (
 				1E55C28826BE2E520046E34C /* SignupAppTests.swift */,
 				1E55C28A26BE2E520046E34C /* Info.plist */,
+				1EAD021A26C08442006AFB21 /* UserDataManagerTests.swift */,
+				1EAD022726C0927D006AFB21 /* ClockDataTests.swift */,
+				1E15A2A626C18C98002BBECA /* ActivityLogManagerTests.swift */,
 			);
 			path = SignupAppTests;
 			sourceTree = "<group>";
@@ -129,6 +194,173 @@
 				1E55C29526BE2E520046E34C /* Info.plist */,
 			);
 			path = SignupAppUITests;
+			sourceTree = "<group>";
+		};
+		1E55C2A426BE2F1C0046E34C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1EAD020A26C04D74006AFB21 /* Services */,
+				1E55C2D726BE4AC50046E34C /* CoreDataDataModel */,
+				1E55C2A926BE31C40046E34C /* Entity */,
+				1E55C2A526BE2F540046E34C /* Managers */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1E55C2A526BE2F540046E34C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				1EAD023B26C10819006AFB21 /* ActivityLogManagerContract.swift */,
+				1EAD024026C1087B006AFB21 /* ActivityLogManagerCoreData.swift */,
+				1E55C2C526BE35620046E34C /* UserDataManagerCoreData.swift */,
+				1E55C2C026BE34430046E34C /* UserDataManagerContract.swift */,
+				1E55C2CA26BE37B00046E34C /* UserDataManagerCloudKit.swift */,
+				1E55C2CF26BE38650046E34C /* CoreDataManager.swift */,
+				1E55C31826BF3A3E0046E34C /* DataManagerContract.swift */,
+				1EAD020526C04ADE006AFB21 /* UserDataManagerFirebase.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		1E55C2A626BE314F0046E34C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				1E55C2A826BE31600046E34C /* ActivityLog */,
+				1E55C2A726BE31580046E34C /* UserData */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		1E55C2A726BE31580046E34C /* UserData */ = {
+			isa = PBXGroup;
+			children = (
+				1E55C2BB26BE33B60046E34C /* UserDataLoginViewController.swift */,
+				1E55C30E26BF2BD10046E34C /* UserDataPresenter.swift */,
+				1E55C31326BF39920046E34C /* UserDataInteractor.swift */,
+			);
+			path = UserData;
+			sourceTree = "<group>";
+		};
+		1E55C2A826BE31600046E34C /* ActivityLog */ = {
+			isa = PBXGroup;
+			children = (
+				1E15A28B26C14E7E002BBECA /* ActivityLogViewController.swift */,
+				1E15A29026C1518C002BBECA /* ActivityLogPresenter.swift */,
+				1E15A29526C151E7002BBECA /* ActivityLogInteractor.swift */,
+				1E15A2B126C1A55D002BBECA /* ActivityLogTableViewCell.swift */,
+			);
+			path = ActivityLog;
+			sourceTree = "<group>";
+		};
+		1E55C2A926BE31C40046E34C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				1E55C2AA26BE32100046E34C /* UserData.swift */,
+				1EAD01E326C02B9F006AFB21 /* ClockData.swift */,
+				1EAD024826C10A9D006AFB21 /* ActivityLogData.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		1E55C2D726BE4AC50046E34C /* CoreDataDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				1EAD025626C10C87006AFB21 /* ActivityLogEntity+CoreDataClass.swift */,
+				1EAD025726C10C87006AFB21 /* ActivityLogEntity+CoreDataProperties.swift */,
+				1E55C30426BE7C550046E34C /* UserDataEntity+CoreDataClass.swift */,
+				1E55C30526BE7C550046E34C /* UserDataEntity+CoreDataProperties.swift */,
+				1E55C2D826BE4B000046E34C /* signupdb.xcdatamodeld */,
+			);
+			path = CoreDataDataModel;
+			sourceTree = "<group>";
+		};
+		1E55C2DE26BE4C0E0046E34C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1E55C27F26BE2E500046E34C /* Info.plist */,
+				1EAD01F126C04197006AFB21 /* Components */,
+				1EAD01E226C02A54006AFB21 /* Storyboards */,
+				1E55C26E26BE2E2A0046E34C /* AppDelegate.swift */,
+				1E55C27026BE2E2A0046E34C /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		1E55C31D26BF4EF80046E34C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1E55C31E26BF4F630046E34C /* ValidDataCheckContract.swift */,
+				1E55C32626BF4FD90046E34C /* ValidDataCheck.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		1EAD01E026C029D9006AFB21 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1EAD01FB26C046CF006AFB21 /* Extensions */,
+				1E55C31D26BF4EF80046E34C /* Utilities */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1EAD01E126C02A0F006AFB21 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1EAD022C26C09CDF006AFB21 /* json */,
+				1E55C27A26BE2E500046E34C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1EAD01E226C02A54006AFB21 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1E55C27426BE2E2A0046E34C /* Main.storyboard */,
+				1E55C27C26BE2E500046E34C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		1EAD01F126C04197006AFB21 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1EAD01F226C041F3006AFB21 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		1EAD01FB26C046CF006AFB21 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1E55C32B26BF88710046E34C /* ViewControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1EAD020A26C04D74006AFB21 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1EAD020B26C04F0E006AFB21 /* ClockServiceContract.swift */,
+				1EAD021026C04F80006AFB21 /* ClockServiceAPIGeoNamesAdapter.swift */,
+				1EAD021526C0509A006AFB21 /* ClockAPIGeoNames.swift */,
+				1EAD021F26C08CF8006AFB21 /* ClockAPIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1EAD022C26C09CDF006AFB21 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				1EAD022D26C09D50006AFB21 /* sample.json */,
+			);
+			path = json;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +467,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E55C27E26BE2E500046E34C /* LaunchScreen.storyboard in Resources */,
+				1EAD022E26C09D50006AFB21 /* sample.json in Resources */,
 				1E55C27B26BE2E500046E34C /* Assets.xcassets in Resources */,
 				1E55C27626BE2E2A0046E34C /* Main.storyboard in Resources */,
 			);
@@ -261,10 +494,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E55C27326BE2E2A0046E34C /* ViewController.swift in Sources */,
-				1E55C27926BE2E2A0046E34C /* SignupApp.xcdatamodeld in Sources */,
+				1EAD025926C10C87006AFB21 /* ActivityLogEntity+CoreDataProperties.swift in Sources */,
+				1E55C31F26BF4F630046E34C /* ValidDataCheckContract.swift in Sources */,
+				1E55C2CB26BE37B00046E34C /* UserDataManagerCloudKit.swift in Sources */,
+				1E55C30726BE7C550046E34C /* UserDataEntity+CoreDataProperties.swift in Sources */,
+				1EAD01E426C02B9F006AFB21 /* ClockData.swift in Sources */,
+				1EAD023C26C10819006AFB21 /* ActivityLogManagerContract.swift in Sources */,
 				1E55C26F26BE2E2A0046E34C /* AppDelegate.swift in Sources */,
+				1E55C30626BE7C550046E34C /* UserDataEntity+CoreDataClass.swift in Sources */,
+				1EAD020C26C04F0E006AFB21 /* ClockServiceContract.swift in Sources */,
+				1E55C2BC26BE33B60046E34C /* UserDataLoginViewController.swift in Sources */,
+				1E15A29626C151E7002BBECA /* ActivityLogInteractor.swift in Sources */,
+				1E15A2B226C1A55D002BBECA /* ActivityLogTableViewCell.swift in Sources */,
+				1EAD025826C10C87006AFB21 /* ActivityLogEntity+CoreDataClass.swift in Sources */,
+				1E55C2AB26BE32100046E34C /* UserData.swift in Sources */,
+				1E55C31926BF3A3E0046E34C /* DataManagerContract.swift in Sources */,
+				1E55C30F26BF2BD10046E34C /* UserDataPresenter.swift in Sources */,
+				1E15A29126C1518C002BBECA /* ActivityLogPresenter.swift in Sources */,
+				1E55C2DA26BE4B000046E34C /* signupdb.xcdatamodeld in Sources */,
+				1E15A28C26C14E7E002BBECA /* ActivityLogViewController.swift in Sources */,
+				1E55C2D026BE38650046E34C /* CoreDataManager.swift in Sources */,
 				1E55C27126BE2E2A0046E34C /* SceneDelegate.swift in Sources */,
+				1EAD024126C1087B006AFB21 /* ActivityLogManagerCoreData.swift in Sources */,
+				1EAD021126C04F80006AFB21 /* ClockServiceAPIGeoNamesAdapter.swift in Sources */,
+				1E55C32C26BF88710046E34C /* ViewControllerExtension.swift in Sources */,
+				1E55C2C126BE34430046E34C /* UserDataManagerContract.swift in Sources */,
+				1EAD021626C0509A006AFB21 /* ClockAPIGeoNames.swift in Sources */,
+				1EAD024926C10A9D006AFB21 /* ActivityLogData.swift in Sources */,
+				1E55C32726BF4FD90046E34C /* ValidDataCheck.swift in Sources */,
+				1E55C31426BF39920046E34C /* UserDataInteractor.swift in Sources */,
+				1EAD022026C08CF8006AFB21 /* ClockAPIService.swift in Sources */,
+				1EAD020626C04ADE006AFB21 /* UserDataManagerFirebase.swift in Sources */,
+				1E55C2C626BE35620046E34C /* UserDataManagerCoreData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +533,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EAD022826C0927D006AFB21 /* ClockDataTests.swift in Sources */,
+				1E15A2A726C18C98002BBECA /* ActivityLogManagerTests.swift in Sources */,
+				1EAD021B26C08442006AFB21 /* UserDataManagerTests.swift in Sources */,
 				1E55C28926BE2E520046E34C /* SignupAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,7 +706,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DVSM299CEH;
-				INFOPLIST_FILE = SignupApp/Info.plist;
+				INFOPLIST_FILE = SignupApp/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,7 +725,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DVSM299CEH;
-				INFOPLIST_FILE = SignupApp/Info.plist;
+				INFOPLIST_FILE = SignupApp/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -599,13 +863,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		1E55C27726BE2E2A0046E34C /* SignupApp.xcdatamodeld */ = {
+		1E55C2D826BE4B000046E34C /* signupdb.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				1E55C27826BE2E2A0046E34C /* SignupApp.xcdatamodel */,
+				1E55C2D926BE4B000046E34C /* signupdb.xcdatamodel */,
 			);
-			currentVersion = 1E55C27826BE2E2A0046E34C /* SignupApp.xcdatamodel */;
-			path = SignupApp.xcdatamodeld;
+			currentVersion = 1E55C2D926BE4B000046E34C /* signupdb.xcdatamodel */;
+			path = signupdb.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

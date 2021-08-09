@@ -56,32 +56,6 @@ class UserDataManagerCoreData: UserDataManagerContract {
         contextLog?.saveLog(activityLogData: activityLog!, userDataEntity: entity)
 
         return ValidationOutputCode.validUserData
-        /*
-        let fetchUserData: NSFetchRequest<UserDataEntity> = UserDataEntity.fetchRequest()
-        fetchUserData.entity = NSEntityDescription.entity(forEntityName: "UserDataEntity", in: managedObjectContext)
-        let predicate = NSPredicate(format: " email == %@ ", userData.email)
-        fetchUserData.predicate = predicate
-        
-        
-
-        do {
-            let results = try managedObjectContext.fetch(fetchUserData)
-            
-            if !(results.count > 0) {
-                return ValidationOutputCode.notFoundUserData
-                // TODO: Implementar el registro de evento
-            } else {
-                if !(results.first!.value(forKey: "password") as! String == userData.password) {
-                    return ValidationOutputCode.invalidUserPassword
-                }
-            }
-        } catch {
-            let fetchError = error as NSError
-            print(fetchError)
-            return ValidationOutputCode.fetchingError
-        }
-        return ValidationOutputCode.validUserData
-         */
     }
     
     func signupUserData(userData: UserData) -> Int {
